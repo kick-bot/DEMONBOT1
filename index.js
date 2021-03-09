@@ -374,7 +374,8 @@ case 'timer':
 				case 'demote':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)'𝐀 𝐓𝐀𝐆 𝐃𝐎 𝐀𝐋𝐕𝐎  𝐐𝐔𝐄 𝐕𝐂 𝐃𝐄𝐒𝐄𝐉𝐀 𝐓𝐈𝐑𝐀 𝐃𝐄 𝐀𝐃𝐌')
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('𝐀 𝐓𝐀𝐆 𝐃𝐎 𝐀𝐋𝐕𝐎 𝐐𝐔𝐄 𝐕𝐂 𝐃𝐄𝐒𝐄𝐉𝐀 𝐑𝐄𝐌𝐎𝐕𝐄 𝐃𝐄 𝐀𝐃𝐌')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = ''
